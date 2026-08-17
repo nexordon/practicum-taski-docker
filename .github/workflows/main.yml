@@ -8,6 +8,7 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -21,12 +22,3 @@ jobs:
           pip install flake8==7.3.0 flake-isort==7.0.0
       - name: Test with flake
         run: python -m flake8 backend/
-
-
-  checkout-and-print-tree:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - name: Print project tree
-        run: tree .
