@@ -8,7 +8,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'SECRET')
 
 DEBUG = (os.getenv('DEBUG_STATUS') == 'True')
 
-ALLOWED_HOSTS = ['localhost', '123.123.123.123', '<your_domain>']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'nexordon.servepics.com']
 
 
 # Application definition
